@@ -10,9 +10,11 @@ TARGET = Core
 TEMPLATE = lib
 CONFIG += staticlib
 
-SOURCES += core.cpp
+SOURCES += core.cpp \
+    pupil.cpp
 
-HEADERS += core.h
+HEADERS += core.h \
+    pupil.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
