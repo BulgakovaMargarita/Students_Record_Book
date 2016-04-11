@@ -14,6 +14,7 @@ void Pupil::marks()
 {
    char PupilSurname[20];
    char PupilName[20];
+   cout<<"Введите фамилию и имя ученика"<<endl;
    cin>>PupilSurname>>PupilName;
    ifstream ProgressBook;
    ProgressBook.open("pupil.txt");
