@@ -18,16 +18,16 @@ void Pupil::marks()
    int password;
    int PassChek;
 
-   cout<<"Введите фамилию и имя ученика"<<endl;
+   cout<<"Enter your surname and name "<<endl;
    cin>>PupilSurname>>PupilName;
 
-   cout<<"Введите пароль"<<endl;
+   cout<<"Enter password"<<endl;
    cin>>password;
 
    ifstream ProgressBook;
-   ProgressBook.open("/home/user/Students_Record_Book/sources/RecordBook/pupil.txt");
+   ProgressBook.open("../../pupil.txt");
 
-   int i;
+   int i,error=0;
    char s1[20];
    char s2[20];
 
@@ -38,21 +38,38 @@ void Pupil::marks()
          cout<<"Literature "<<mark[literature]<<endl;
          cout<<"Algebra "<<mark[algebra]<<endl;
          cout<<"Geometry "<<mark[geometry]<<endl;
+         cout<<"History "<<mark[history]<<endl;
          cout<<"Social Studies "<<mark[SocialStudies]<<endl;
          cout<<"Life Safety Fundamentals "<<mark[LSF]<<endl;
          cout<<"Physical Culture "<<mark[PC]<<endl;
-         cout<<"biology "<<mark[biology]<<endl;
-         cout<<"geography "<<mark[geography]<<endl;
+         cout<<"Biology "<<mark[biology]<<endl;
+         cout<<"Geography "<<mark[geography]<<endl;
+
+         int j;
+         int k2=0, k4=0, k5=0;
+         for (j=1; i<10; i++){
+             if (mark[j]==2) k2++;
+             if (mark[j]==4) k4++;
+             if (mark[i]==5) k5++;
+         }
+         double quality;
+         quality=100 -(k4+k5)/10;
+         if (k2==0) {cout<<"Quality "<<quality<<"% "<<" Progress 100%"<<endl;}
+                           else
+         {cout<<"Quality "<<quality<<"% "<<" Progress "<<(10-k2)*10<<"%"<<endl;}
+
          i=17;
+         error=0;
        }
+       else error=1;
+
 
    }
+   if (error==1) cerr<<"Incorrect login or password"<<endl;
    ProgressBook.close();
-   delete []s1;
-   delete []s2;
-   delete []PupilSurname;
-   delete []PupilName;
+
 }
+
 
 Pupil::~Pupil()
 {

@@ -6,7 +6,9 @@ using namespace std;
 
 int main()
 {
-        puts("1. Запрос табеля ученика");
+        puts("Choose a user");
+        puts("1. Pupil");
+        puts("2. Teacher");
         int choice;
         scanf("%d", &choice);
         switch (choice) {

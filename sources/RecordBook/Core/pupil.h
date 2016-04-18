@@ -20,7 +20,6 @@ public:
     Pupil();
     ~Pupil();
     void marks();
-    int performance_calculation();
     int mark[10];
 };
 
