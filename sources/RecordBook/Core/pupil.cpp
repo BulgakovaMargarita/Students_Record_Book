@@ -21,7 +21,7 @@ void Pupil::marks()
    cout<<"Enter your surname and name "<<endl;
    cin>>PupilSurname>>PupilName;
 
-   cout<<"Enter password"<<endl;
+   cout<<"Enter year"<<endl;
    cin>>password;
 
    ifstream ProgressBook;
@@ -32,31 +32,32 @@ void Pupil::marks()
    char s2[20];
 
    for (i=1; i<16; i++){
-       ProgressBook>>s1>>s2>>PassChek>>mark[russian]>>mark[literature]>>mark[algebra]>>mark[geometry]>>mark[history]>>mark[SocialStudies]>>mark[LSF]>>mark[PC]>>mark[biology]>>mark[geography];
+       ProgressBook>>s1>>s2>>PassChek>>mark[russian]>>mark[literature]>>mark[algebra]>>mark[geometry]>>mark[history]>>mark[SocialStudies]>>mark[LSF]>>mark[PE]>>mark[biology]>>mark[geography];
        if ((strcmp(s1,PupilSurname)==0) and(strcmp(s2,PupilName)==0) and (password==PassChek)){
-         cout<<"Russian "<<mark[russian]<<endl;
-         cout<<"Literature "<<mark[literature]<<endl;
-         cout<<"Algebra "<<mark[algebra]<<endl;
-         cout<<"Geometry "<<mark[geometry]<<endl;
-         cout<<"History "<<mark[history]<<endl;
-         cout<<"Social Studies "<<mark[SocialStudies]<<endl;
-         cout<<"Life Safety Fundamentals "<<mark[LSF]<<endl;
-         cout<<"Physical Culture "<<mark[PC]<<endl;
-         cout<<"Biology "<<mark[biology]<<endl;
-         cout<<"Geography "<<mark[geography]<<endl;
+         cout<<mark[russian]<<" Russian"<<endl;
+         cout<<mark[literature]<<" Literature"<<endl;
+         cout<<mark[algebra]<<" Algebra"<<endl;
+         cout<<mark[geometry]<<" Geometry"<<endl;
+         cout<<mark[history]<<" History"<<endl;
+         cout<<mark[SocialStudies]<<" Social Studies"<<endl;
+         cout<<mark[LSF]<<" Life Safety Fundamentals"<<endl;
+         cout<<mark[PE]<<" PE"<<endl;
+         cout<<mark[biology]<<" Biology"<<endl;
+         cout<<mark[geography]<<" Geography"<<endl;
 
          int j;
-         int k2=0, k4=0, k5=0;
-         for (j=1; i<10; i++){
+         int k2=0, k4=0, k5=0,summ=0;
+         for (j=0; j<10; j++){
+             summ=summ+mark[j];
              if (mark[j]==2) k2++;
              if (mark[j]==4) k4++;
-             if (mark[i]==5) k5++;
+             if (mark[j]==5) k5++;
          }
          double quality;
-         quality=100 -(k4+k5)/10;
-         if (k2==0) {cout<<"Quality "<<quality<<"% "<<" Progress 100%"<<endl;}
+         quality=(k4+k5)*10;
+         if (k2==0) {cout<<"Quality "<<quality<<"% "<<" Progress 100%"<<" GPA="<<summ/10<<endl;}
                            else
-         {cout<<"Quality "<<quality<<"% "<<" Progress "<<(10-k2)*10<<"%"<<endl;}
+         {cout<<"Quality "<<quality<<"% "<<" Progress "<<(10-k2)*10<<"%"<<" GPA="<<summ/10<<endl;}
 
          i=17;
          error=0;

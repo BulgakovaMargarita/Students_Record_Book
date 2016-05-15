@@ -11,10 +11,12 @@ TEMPLATE = lib
 CONFIG += staticlib
 
 SOURCES += core.cpp \
-    pupil.cpp
+    pupil.cpp \
+    teacher.cpp
 
 HEADERS += core.h \
-    pupil.h
+    pupil.h \
+    teacher.h
 unix {
     target.path = /usr/lib
     INSTALLS += target

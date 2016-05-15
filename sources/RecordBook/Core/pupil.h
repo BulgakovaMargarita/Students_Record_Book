@@ -10,7 +10,7 @@ enum subject {russian,
               history,
               SocialStudies,
               LSF,
-              PC,
+              PE,
               biology,
               geography};
 
