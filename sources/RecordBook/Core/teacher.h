@@ -7,14 +7,16 @@ class Teacher
 {
 public:
     Teacher();
+    ~Teacher();
     void pupil_marks();
-    int mark[10];
     void eu_main();
-    void find_excelllent_pupil();
-    void find_good_pupil();
-    void find_lagging_pupil();
-    void performance_calculation();
-    void change_mark();
+    void find_excelllent_pupil(student *);
+    void find_good_pupil(student *);
+    void find_lagging_pupil(student *);
+    void performance_calculation(student *);
+    void change_mark(student *);
+
+
 
 
 };

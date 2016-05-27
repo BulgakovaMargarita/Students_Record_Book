@@ -10,11 +10,11 @@ TARGET = Core
 TEMPLATE = lib
 CONFIG += staticlib
 
-SOURCES += core.cpp \
+SOURCES += \
     pupil.cpp \
     teacher.cpp
 
-HEADERS += core.h \
+HEADERS += \
     pupil.h \
     teacher.h
 unix {

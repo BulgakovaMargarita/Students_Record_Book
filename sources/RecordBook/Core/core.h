@@ -35,7 +35,7 @@ public:
     * @brief изменение оценки ученика
     */
     virtual void change_mark()=0;
-   
+
 
 };
 
