@@ -9,6 +9,10 @@ struct student {
     char surname[20];
     int mark[10];
     float ocenka;
+    int Quality;
+    int Progress;
+    int num;
+    float GPA;
 };
 
 enum subject {russian,
@@ -28,11 +32,10 @@ public:
     Pupil();
     ~Pupil();
     void marks(student *);
-    void read(student *);
-    void print(student *);
     char PupilSurname[20];
     char PupilName[20];
     int half_year;
+    void year_marks(student *);
 };
 
 #endif // PUPIL_H

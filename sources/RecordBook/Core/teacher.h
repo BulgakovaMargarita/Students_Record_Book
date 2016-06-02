@@ -8,8 +8,6 @@ class Teacher
 public:
     Teacher();
     ~Teacher();
-    void pupil_marks();
-    void eu_main();
     void find_excelllent_pupil(student *);
     void find_good_pupil(student *);
     void find_lagging_pupil(student *);

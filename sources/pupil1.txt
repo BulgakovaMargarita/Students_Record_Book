@@ -13,21 +13,6 @@ Titov Alexandr 4 4 3 3 5 5 5 5 4 5
 Tkacheva Anastasia 5 5 5 5 5 5 5 5 5 5
 Chernikova Tomara 5 5 4 4 5 5 5 5 4 5
 Hagay Vitaliy 5 5 4 4 5 5 4 5 4 5
-Bayborodin Nikita 3 4 5 3 4 4 5 5 4 4
-Blinov Andrey 4 4 5 3 5 5 4 5 3 4
-Vinokurova Anna 3 2 3 3 3 3 3 3 3 3
-Vokina Anastasia 5 4 5 5 5 5 5 5 5 5
-Zagoruy Iliya 4 4 4 3 4 4 4 4 4 4
-Zonova Yuliya 5 5 4 3 5 5 5 5 5 5
-Ivanov Danila 5 5 5 5 5 5 5 5 5 5
-Kistenev Anton 5 5 5 5 5 5 5 5 5 5
-Krasnoyarov Nikolay 2 4 3 3 4 4 3 4 4 4
-Manovkin Daniil 4 4 3 4 4 4 4 4 4 4
-Masyuk Stanislav 5 5 5 5 5 5 5 5 5 5
-Titov Alexandr 4 4 3 3 3 3 3 3 4 3
-Tkacheva Anastasia 5 5 5 5 5 5 5 5 5 5
-Chernikova Tomara 5 5 4 4 5 5 5 5 5 5
-Hagay Vitaliy 5 5 4 4 5 5 4 5 4 4
 
 
 
