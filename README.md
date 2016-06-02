@@ -16,3 +16,6 @@
 
 ### Диаграмма прецедентов использования
 ![Диаграмма прецедентов использования](https://github.com/BulgakovaMargarita/Students_Record_Book/blob/master/reports/diagrams/UseCaseDiagram1.png)
+
+### Диаграмма компонентов
+![Диаграмма компонентов](https://github.com/BulgakovaMargarita/Students_Record_Book/blob/master/reports/diagrams/ComponentDiagram1.jpg)
